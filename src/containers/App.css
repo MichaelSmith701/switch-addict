@@ -1,0 +1,322 @@
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 100%;
+  color: #303030;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #e41318;
+    color: white;
+    font-family: inherit;
+    font-size: inherit;
+    transition: background-color .3s ease;
+}
+
+.button:hover {
+    background-color: #470000;
+}
+
+/*---------Navbar styling------------*/
+
+header {
+    background-color: #e41318!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.08) 60%,rgba(0,0,0,0.08) 100%);
+}
+
+header li {
+  list-style: none;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+header a:hover {
+    opacity: 1;
+}
+
+.homepage {
+    display: flex;
+}
+
+.newsfeed-header, .comments-header {
+    background-color: #e41318!important;
+    color: white;
+    margin: 0 0 40px 0;
+    /*text-align: center;*/
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.08) 60%,rgba(0,0,0,0.08) 100%);
+    padding: 5px 10px;
+}
+
+/*@media screen and (min-width: 850px) {*/
+
+/*---------Newsfeed styling------------*/
+.newsfeed {
+    display: block;
+    width: 940px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.newsfeed-item {
+    display: flex;
+    float:left;
+    margin-bottom: 25px;
+    background-color: #efedee;
+}
+
+.newsfeed-text {
+    width: 710px;
+    height: 200px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5em;
+}
+
+.newsfeed-dateline {
+    position: absolute;
+    bottom: 10px;
+}
+
+.newsfeed-title a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.newsfeed-item-image {
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+.newsfeed-item-image img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/*-------CS Game styling----------*/
+
+.right-aside {
+    width: 300px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.comingSoon {
+    display: flex;
+    margin-top: 25px;
+}
+
+.gameThumb {
+    float: left;
+}
+
+.gameThumb img {
+    height: 120px;
+    width: 120px;
+}
+
+.CSInfo {
+    float: right;
+    margin-left: 15px;
+}
+
+.coming-soon-thumbs {
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #e41318!important;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 40%,rgba(0,0,0,0.08) 60%,rgba(0,0,0,0.08) 100%);
+}
+
+.footer p {
+    margin: 0;
+    padding: 15px 0;
+}
+
+/*-------News article styling----------*/
+
+.news-article-container {
+    display: flex;
+    width: 65%;
+    margin: 10px auto;
+    flex-direction: column;
+}
+
+
+.news-article-title {
+    margin: 10px 0;
+    font-size: calc(1em * 1.250 * 1.250 * 1.250 * 1.250);
+}
+
+.news-article-byline p {
+    margin: 0;
+}
+
+.news-article-image {
+    margin-top: 20px;
+}
+
+.news-article-image img {
+    width: 100%;
+    height: auto;
+}
+
+.news-article-content {
+    margin-top: 15px;
+    line-height: 1.6em;
+    font-size: 23px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+
+/*-------Comments styling----------*/
+
+.news-article-comment {
+    display: flex;
+    margin: 20px 0;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.news-article-comment-form {
+    width: 50%;
+    
+}
+
+.news-article-comment-body {
+    margin: 0 0 10px 20px;
+    width: 100%;
+}
+
+.news-article-comment-body h3 p {
+   margin-top: 0;
+}
+
+.news-article-comment-avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-name {
+    font-size: 125%;
+    font-weight: 700;
+    padding-right: 40px;
+}
+
+.comment-text-footer {
+    margin-top: 12px;
+}
+
+.comment-text-input textarea {
+    outline: none;
+    width: 100%;
+}
+
+
+/*-------News item styling----------*/
+/*.news-feed {*/
+/*    display: block;*/
+/*    width: 70%;*/
+/*    float: left;*/
+/*}*/
+
+/*-------News item styling----------*/
+
+/*.news-item {*/
+/*    display: flex;*/
+/*    margin: 50px 50px;*/
+/*    max-height: 200px;*/
+/*    overflow: hidden;*/
+/*    border-top: 1px solid black;*/
+/*}*/
+
+/*.news-item-image {*/
+/*    width: 30%;*/
+/*}*/
+
+/*.news-item img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    display: block;*/
+/*    float: left;*/
+/*    min-height: 100px;*/
+/*    min-width: 100px;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.news-text {*/
+/*    margin-left: 25px;*/
+/*    width: 70%;*/
+/*}*/
+
+/*.news-title {*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+/*.news-summary {*/
+/*    margin: 0;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*.right-aside {*/
+/*    width: 30%;*/
+/*    float: right;*/
+/*    margin-top: 100px;*/
+/*    margin-right: 50px;*/
+/*}*/
+
+/*right-aside-image img {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*}*/
